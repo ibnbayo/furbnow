@@ -17,4 +17,4 @@
 - Created a urls.py file for the app
 - Added a checkbox input next to each measure to allow users to select measures.
 - Included a form to collect measures selected by the user.
-- Process the form data submitted by the user to calculate the total cost using Django request.POST to get the values of the selected measures.
+- Processed the form data submitted by the user to calculate the total cost using Django request.POST to get the values of the selected measures.
