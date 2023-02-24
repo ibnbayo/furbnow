@@ -1,0 +1,84 @@
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* Article styles */
+article {
+  max-width: 70rem;
+  margin: 0 auto;
+  border: 0.18rem solid lightgrey;
+  padding: clamp(1rem, 2vw, 3rem);
+  border-radius: 0.5rem;
+}
+
+h1, dl {
+  margin: 0;
+}
+
+article > * + * {
+  margin-top: 1rem;
+}
+
+/* Form styles */
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem;
+}
+
+form > div {
+  background: antiquewhite;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+form > div:nth-child(4n - 2) {
+  background: lavenderblush;
+}
+
+form > div:nth-child(4n - 1) {
+  background: azure;
+}
+
+form > div:nth-child(4n) {
+  background: lavender;
+}
+
+label dt{
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Total cost styles */
+p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
